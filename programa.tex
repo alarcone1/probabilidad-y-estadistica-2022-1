@@ -1,0 +1,243 @@
+\documentclass[letterpaper,12pt,openany]{article}
+%%% ----------------------------------------------------------------------
+\pagestyle{headings}
+%%% ----------------------------------------------------------------------
+%%% PAQUETES -------------------------------------------------------------
+%=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\usepackage{fullpage}
+\usepackage{enumerate}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsfonts}
+\usepackage{amsmath,amssymb}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{flafter}
+\usepackage{amsthm,array}
+\usepackage{float}
+\usepackage{geometry}
+\usepackage{latexsym}
+\usepackage{array}
+\usepackage{verbatim}
+\usepackage{mathtools}
+%\usepackage{enumitem}
+%\usepackage{longtable}
+%\usepackage{natbib}
+%\usepackage{pb-diagram}
+%\usepackage{makeidx}
+%\usepackage{fancyhdr}
+%\usepackage{fancyvrb}
+%\usepackage{makeidx}
+%\usepackage{textcomp}
+%\usepackage{multicol}
+%\usepackage{multirow}
+\usepackage{url}
+%\usepackage{tikz}
+%\usepackage{nomencl}
+%\usepackage{bookmark}
+%\usepackage{caption}
+%\usepackage{tabularx}
+%%% ----------------------------------------------------------------------
+%%% TABLES ---------------------------------------------------------------
+%%% ----------------------------------------------------------------------
+\makeatletter
+\def\hlinewd#1{%
+\noalign{\ifnum0=`}\fi\hrule \@height #1 %
+\futurelet\reserved@a\@xhline}
+\makeatother
+%%% ----------------------------------------------------------------------
+%%% FORMATO DE PÁGINA ----------------------------------------------------
+%=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\oddsidemargin   0.2  in
+\evensidemargin  0.2  in
+\voffset        -0.3  in
+\hoffset         0.0  in
+\headsep         0.25 in
+\topmargin       0.0  in
+\textwidth       6.3  in
+\textheight      9.0  in
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+%%% ----------------------------------------------------------------------
+\renewcommand{\baselinestretch}{1.1}
+%\renewcommand{\labelitemi}{$\bullet$}
+%%% ----------------------------------------------------------------------
+% SÍMBOLOS ---------------------------------------------------------------
+%=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%
+\def\@roman#1{\romannumeral #1}
+\makeatother
+\spanishdecimal{.}
+%%% ----------------------------------------------------------------------
+% COLORES  ---------------------------------------------------------------
+%=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%\definecolor{violet}{rgb}{0.56, 0.0, 1.0}
+%
+%%% ----------------------------------------------------------------------
+\allowdisplaybreaks
+%%% ----------------------------------------------------------------------
+%%% ----------------------------------------------------------------------
+% DOCUMENT ---------------------------------------------------------------
+%=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\begin{document}
+
+%\title{Titulo}
+
+%\author{Autor}
+
+%\maketitle
+
+\begin{center}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.75]{logo}
+\end{figure}
+{\Large \textbf{Probabilidad y Estadística Fundamental}}
+\end{center}
+
+
+\section*{Información general}
+
+\begin{itemize}
+	\item \textbf{Código:} 1000013.
+	\item \textbf{Créditos:} 3.
+	\item \textbf{Profesor:} Juan Camilo Sosa Martínez.
+	\item \textbf{Correo:} \url{jcsosam@unal.edu.co}
+	\item \textbf{Página web:} \url{https://sites.google.com/view/juansosa/}
+\end{itemize}
+
+\section*{Descripción} 
+
+\textbf{Objetivo de formación} \\
+Desarrollar el pensamiento estadístico en la formación profesional del estudiante, ofreciéndole una sintaxis precisa del lenguaje estadístico; promoviendo la caracterización de realidades en términos estadísticos; estimulando el manejo adecuado de conceptos, términos y procedimientos estadísticos; y aprestando elementos para la lectura crítica, la comprensión, y la presentación de resultados estadísticos por parte del estudiante.
+
+\textbf{Objetivos pedagógicos} \\
+El estudiante que curse la asignatura y cumpla con las exigencias académicas, podrá:
+\begin{itemize}
+	\item Identificar la estructura general de la inferencia estadística, para formalizar la sintaxis inicial del lenguaje estadístico, con el respaldo de elementos de la probabilidad.
+	\item Adquirir conceptos de la probabilidad para transferirlos como elementos descriptivos y de apoyo conceptual en el área de conocimiento del estudiante.
+	\item Utilizar medios estadísticos para la presentación y resumen de datos.
+	\item Realizar estimaciones puntuales y por intervalo a partir de muestras simples.
+	\item Traducir conjeturas científicas a lenguaje estadístico y valorar su plausibilidad.
+	\item Iniciar el modelado estadístico por medio de los fundamentos de la regresión lineal.
+\end{itemize}
+
+\section*{Metodología}
+
+El curso estará compuesto por una combinación de clases magistrales y prácticas usando software especializado, en las que además de la explicación de los conceptos correspondientes, se proporciona una gran variedad de ejemplos aplicados. Adicionalmente, habrá talleres para que los estudiantes apliquen los conceptos aprendidos, realicen operaciones automatizadas, y analicen e interpreten los resultados de tales operaciones.
+
+\section*{Evaluación}
+
+Los exámenes parciales están compuestos de problemas tanto conceptuales (teóricos) como prácticos, y están basados en los ejercicios propuestos en los talleres.
+
+\begin{table}[H]
+	\centering
+		\begin{tabular}{lcc}
+			\hline
+			Evaluación & Valor (\%) & Fecha \\
+			\hline
+			E. Parcial 1 & 25 &  \\
+			E. Parcial 2 & 25 &  \\
+			E. Final     & 25 &  \\
+			Quices       & 25 &  \\   
+			\hline
+		\end{tabular}
+\end{table}
+
+\section*{Contenido}
+
+\begin{enumerate}[I.]
+	\item \textbf{Introducción.}
+	\begin{enumerate}[1.]
+		\item Definición de Estadística y conceptos generales relacionados.
+		\item Clasificación de variables según diversos criterios.
+		\item Escalas de medida.
+	\end{enumerate}
+
+	\item \textbf{Resumen y descripción de datos de una variable.}
+	\begin{enumerate}[1.]
+		\item Presentación tabular y gráfica de una variable.
+		\item Medidas descriptivas de centro, localización, dispersión y forma.
+		\item Datos atípicos.
+	\end{enumerate}
+
+	\item \textbf{Resumen y descripción de datos de dos variables.}
+	\begin{enumerate}[1.]
+		\item Presentación tabular y gráfica de dos variables.
+		\item Medidas descriptivas de correlación.
+	\end{enumerate}
+
+	\item \textbf{Conceptos básicos de probabilidad.}
+	\begin{enumerate}[1.]
+		\item Experimento aleatorio, espacio muestral, eventos.
+		\item Definición de probabilidad y sus propiedades.
+		\item Asignación de probabilidades: clásica, frecuentista, subjetiva.
+		\item Reglas de conteo.
+		\item Probabilidad condicional e independencia de eventos. 
+		\item Teorema de Bayes.
+	\end{enumerate}
+
+	\item \textbf{Principios de variables aleatorias.}
+	\begin{enumerate}[1.]
+		\item Definición de variable aleatoria. 
+		\item Tipos de variables aleatorias.
+		\item Funciones de probabilidad, densidad, y de distribución.
+		\item Valor esperado y varianza de una variable aleatoria.
+		\item Percentiles.
+	\end{enumerate}
+
+	\item \textbf{Modelos de probabilidad usuales.}
+	\begin{enumerate}[1.]
+		\item Distribuciones Bernoulli y binomial.
+		\item Distribución hipergeométrica.
+		\item Distribución Poisson.
+		\item Distribución uniforme continua.
+		\item Distribución exponencial.
+		\item Distribución normal.
+	\end{enumerate}
+
+	\item \textbf{Principios de inferencia estadística.}
+	\begin{enumerate}[1.]
+		\item Tipos de muestreo.
+		\item Distribución muestral de la media y la proporción.
+		\item Teorema Central del Límite.
+	\end{enumerate}
+
+	\newpage
+		
+	\item \textbf{Estimación de parámetros.}
+	\begin{enumerate}[1.]
+		\item Estimador, estimación, intervalo de confianza.
+		\item Insesgamiento y eficiencia.
+		\item Estimación por intervalo para la media y para la proporción.
+		\item Determinación del tamaño de muestra para estimar la media y para la proporción.
+	\end{enumerate}
+	
+	\item \textbf{Prueba de hipótesis.}
+	\begin{enumerate}[1.]
+		\item Hipótesis, errores, probabilidades de errores, test, estadístico de prueba, valor $p$
+		\item Procedimiento general de prueba.
+		\item Prueba de hipótesis para la media y para la proporción.
+		\item Prueba de hipótesis para la varianza.
+		\item Prueba de hipótesis para la diferencia de medias y de proporciones.
+		\item Prueba de hipótesis para la razón de varianzas.
+	\end{enumerate}
+	
+	\item \textbf{Regresión lineal simple.}
+	\begin{enumerate}[1.]
+		\item Modelo de regresión.
+		\item Recta de mínimos cuadrados.
+		\item Estimación de los coeficientes de regresión.
+		\item Evaluación del modelo.
+	\end{enumerate}
+
+\end{enumerate}
+ 
+\nocite{*}
+\renewcommand{\bibname}{Referencia}
+\bibliographystyle{plain}
+\bibliography{referencias}
+
+
+\end{document} 
