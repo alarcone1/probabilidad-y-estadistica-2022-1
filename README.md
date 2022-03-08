@@ -4,3 +4,4 @@ Materiales del curso de **Probabilidad y Estadística Fundamental** ofreciendo e
 
 0. Programa.
 1. Introducción.
+2. Tablas.
