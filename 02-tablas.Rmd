@@ -51,7 +51,7 @@ $$h_j=\frac{n_j}{n}$$
 
 ## Ejemplo
 
-En un proceso de control de calidad, durante un periodo de tiempo determinado, se tiene un conjunto de 7,614 lotes de cien resistencias (resistores) cada uno. Para cada lote se registra el número de resistencias con algún tipo de inconformidad, obteniéndose los resultados de la tabla que se presenta a continuación. Completar la tabla de frecuencias.
+En un proceso de control de calidad, durante un periodo de tiempo determinado, se tiene un conjunto de 7614 lotes de cien resistencias (resistores) cada uno. Para cada lote se registra el número de resistencias con algún tipo de inconformidad, obteniéndose los resultados de la tabla que se presenta a continuación. Completar la tabla de frecuencias.
 
 ```{r, eval = TRUE, echo=FALSE, out.width="30%", fig.pos = 'H', fig.align = 'center'}
 knitr::include_graphics("resistencias.jpg")
@@ -66,17 +66,17 @@ knitr::include_graphics("resistencias.jpg")
 | 4        |         | 0.0603|                  
 | 5        |  157    |       |
 | 6        |         |       |
-| Total    |  7,614  |       |
+| Total    |  7614  |       |
 
 ```{r}
 # tamaño de la muestra
 n <- 7614
-# frecuencia absoluta clase 4
-n_4 <- 0.0603*n
-print(n_4)
-# frecuencia absoluta clase 6
-n_6 <- n - (145 + 2415 + 3456 + 852 + 459 + 157)
-print(n_6)
+# frecuencia absoluta clase 5
+n_5 <- 0.0603*n
+print(n_5)
+# frecuencia absoluta clase 7
+n_7 <- n - (145 + 2415 + 3456 + 852 + 459 + 157)
+print(n_7)
 # frecuencias absolutas
 nj <- c(145, 2415, 3456, 852, 459, 157, 130)
 # frecuencias relativas
