@@ -15,3 +15,5 @@ Materiales del curso de **Probabilidad y Estadística Fundamental** ofreciendo e
 - Taller 1 - Solución.
 - Taller 2.
 - Taller 2 - Solución.
+- Taller 3.
+- Taller 3 - Solución.
