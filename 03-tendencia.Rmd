@@ -192,7 +192,7 @@ La siguiente tabla resume con intervalos el peso (kg) de una muestra de material
 |$23-24$              |$23.5$   |$4$    |
 
 El número de intervalos es $m=9$ y el tamaño de la muestra es $n=\sum_{j=1}^{m} n_j = 450$. De este modo, la media asociada con este conjunto de datos agrupados está dada por:
-$$M(y)\approx\frac{1}{n}\sum_{j=1}^{n}n_j\,y_{j}=\frac{1}{450}\left( (2)(15.5) + (5)(16.5) + \ldots + (4)(23.5) \right)=20.015\,.$$
+$$M(y)\approx\frac{1}{n}\sum_{j=1}^{n}n_j\,y_{j}=\frac{1}{450}\left( 2*15.5 + 5*16.5 + \ldots + 4*23.5 \right)=20.015\,.$$
 Por lo tanto, el peso promedio de este grupo de materiales es 20.015 kg.
 
 ```{r}
@@ -240,7 +240,7 @@ Las calificaciones de un estudiante están conformadas de acuerdo con la informa
 
 Se observa que las actividades académicas no tienen el mismo peso en la evaluación. Por lo tanto, siguiendo la fórmula del promedio ponderado se obtiene que el promedio del estudiante es:
 \[
-    M(x) = \frac{\sum_{i} w_i x_i}{\sum_{i} w_i} = \frac{(4.5)(0.4) + (1.0)(0.10) + (3.5)(0.50) }{0.40 + 0.10 + 0.5} =3.65.
+    M(x) = \frac{\sum_{i} w_i x_i}{\sum_{i} w_i} = \frac{(4.5)(0.4) + (1.0)(0.10) + (3.5)(0.50) }{0.40 + 0.10 + 0.50} =3.65.
 \]
 Luego, el promedio del estudiante en esta asignatura es 3.65.
 
@@ -248,8 +248,10 @@ Luego, el promedio del estudiante en esta asignatura es 3.65.
 # calificacion
 x <- c(4.5, 1.0, 3.5)
 # valor
-w <- c(40, 10, 50)/100
+w <- c(40, 10, 50)/100  # w <- c(0.4, 0.1, 0.5) 
 print(w)
+# suma de los pesos
+sum(w)
 # promedio
 sum(w*x)/sum(w)
 ```
@@ -294,6 +296,7 @@ pos <- (n+1)/2
 print(pos)
 # ordenar datos ascendentemente
 x <- sort(x, decreasing = FALSE)
+print(x)
 # mediana, dato en la posicion (n+1)/2
 x[pos]
 # otra manera
@@ -343,9 +346,21 @@ donde $k$ es el **índice del primer intervalo** cuya frecuencia relativa acumul
 
 Calcular e interpretar la mediana del peso del conjunto de datos asociados con la muestra de materiales.
 
+| Intervalo | Marca de clase   | F. Absoluta | 
+|:-------------------:|:-------:|:-----:|
+|$15-16$              |$15.5$   |$2$    |
+|$16-17$              |$16.5$   |$5$    |
+|$17-18$              |$17.5$   |$29$   |     
+|$18-19$              |$18.5$   |$76$   |
+|$19-20$              |$19.5$   |$118$  |
+|$20-21$              |$20.5$   |$96$   |
+|$21-22$              |$21.5$   |$83$   |
+|$22-23$              |$22.5$   |$37$   |
+|$23-24$              |$23.5$   |$4$    |
+
 El índice del primer intervalo que acumula el $50\%$ de los datos es $k = 5$, y por lo tanto el intervalo de referencia es $(19,20]$. Así, la mediana correspondiente es:
 $$
-    P_{50} \approx  19+ (1)\left(\frac{(0.5)(450)-112}{118}\right)=19.958\,.
+    P_{50} \approx  19+ 1*\left(\frac{0.5*450-112}{118}\right)=19.958\,.
 $$
 Es decir que el $50\%$ de los materias presentan un peso menor o igual que $19.958$ kg.
 
@@ -354,14 +369,9 @@ Es decir que el $50\%$ de los materias presentan un peso menor o igual que $19.9
 li <- 15:23
 # limite superior de los intervalos
 ls <- 16:24
-# marca de clase
-yj <- (li+ls)/2
-print(yj)
-# numero de intervalos
-length(yj)
 # frecuencia absoluta
 nj <- c(2, 5, 29, 76, 118, 96, 83, 37, 4)
-# tamaÃ±o de la muestra
+# tamaño de la muestra
 n <- sum(nj)
 print(n)
 # frecuencia relativa
