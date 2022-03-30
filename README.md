@@ -8,6 +8,8 @@ Materiales del curso de **Probabilidad y Estadística Fundamental** ofreciendo e
 1. Introducción.
 2. Tablas.
 3. Medidas de Tendencia Central y Localización.
+4. Medidas de Variabilidad.
+5. Análisis Gráfico.
 
 ## Talleres
 
