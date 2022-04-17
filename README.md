@@ -24,4 +24,5 @@ Materiales del curso de **Probabilidad y Estadística Fundamental** ofreciendo e
 - Taller 4.
 - Taller 4 - Solución.
 - Taller 5.
+- Taller 5 - Solución.
 - Taller 6.
