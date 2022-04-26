@@ -33,6 +33,7 @@ Sean $E_1,\ldots,E_m$ una secuencia de subprocesos que conforman un proceso comp
 $$
 n = \prod_{j=1}^{m}n_j = n_1\times\ldots\times n_m\,.
 $$
+
 ## Ejemplo
 
 En una consulta un médico determina que su paciente debe tomar medicación para dos condiciones. Para la primera tiene 3 opciones de medicamentos y para la segunda 5, ¿cuántas posibles prescripciones diferentes puede hacer el médico?
@@ -48,13 +49,13 @@ El número de prescripciones total es $n = n_1\times n_2=3\times 5=15$.
 
 ## Ejercicio
 
-¿De cuántas maneras se peude clasificar una empresa de acuerdo con su ubicación (ciudad capital, ciudad intermedia, otra ciudad), su actividad económica (servicios, comercial, industrial, mixta), y su constitución (pública, privada)? 
+¿De cuántas maneras se puede clasificar una empresa de acuerdo con su ubicación (ciudad capital, ciudad intermedia, otra ciudad), su actividad económica (servicios, comercial, industrial, mixta), y su constitución (pública, privada)? 
 
 ## Ejercicio
 
 Una compañía está comenzando un proyecto para aumentar su capacidad de producción. El proyecto se divide en dos grandes etapas: diseño y construcción. La administración no puede predecir de antemano el tiempo exacto requerido para completar cada etapa del proyecto. Proyectos similares indican tiempos de finalización de la etapa de diseño de 2, 3 o 4 meses, y tiempos de finalización de la etapa de construcción de 6, 7 u 8 meses. ¿Cuántos posibles rangos de tiempo se pueden considerar para llevar a cabo el proyecto?
 
-## ¿De cuántas formas se pueden seleccionar $k$ elementos de $n$, con $k<n$, si el orden sí importa y no hay repeticiones?
+## ¿De cuántas formas se pueden seleccionar $k$ elementos de $n$, con $k\leq n$, si el orden sí importa y no hay repeticiones?
 
 La operación resultante se llama **permutación sin repetición**:
 $$
@@ -80,9 +81,9 @@ head(lista)
 dim(lista )
 ```
 
-## ¿De cuántas formas se pueden seleccionar $k$ elementos de $n$, con $k<n$, si el orden sí importa y sí hay repeticiones?
+## ¿De cuántas formas se pueden seleccionar $k$ elementos de $n$, con $k\leq n$, si el orden sí importa y sí hay repeticiones?
 
-La operación resultante se llama **permutación sin repetición**:
+La operación resultante se llama **permutación con repetición**:
 $$
 n^k=n\times n\times....\times n
 $$
@@ -101,7 +102,8 @@ lista <- gtools::permutations(n = 5, r = 3, v = 1:5, repeats.allowed = TRUE)
 head(lista)
 dim(lista)
 ```
-## ¿De cuántas formas se pueden seleccionar $k$ elementos de $n$, con $k<n$, si el orden no importa y no hay repeticiones?
+
+## ¿De cuántas formas se pueden seleccionar $k$ elementos de $n$, con $k\leq n$, si el orden no importa y no hay repeticiones?
 
 La operación resultante se llama **combinación**:
 $$
@@ -123,6 +125,7 @@ lista <- gtools::combinations(n = 20, r = 3, v = 1:20)
 head(lista)
 dim(lista)
 ```
+
 ## Ejercicio
 
 Considere un procedimiento de control de calidad en el cual un inspector selecciona aleatoriamente dos de cinco partes para ser inspeccionadas. En un grupo de cinco partes, ¿cuántas combinaciones de dos partes pueden seleccionarse?
@@ -216,7 +219,7 @@ Observaciones:
 
 ## Asignación clásica (frecuentista) de probabilidades
 
-Se define la probabilidad del evento $A$ como la **frecuencia relativa** de la ocurrencia de $A$ asociada con un ``gran número'' de repeticiones del experimento aleatorio:
+Se define la probabilidad del evento $A$ como la **frecuencia relativa** de la ocurrencia de $A$ asociada con un "gran número" de repeticiones del experimento aleatorio:
 \[
 P(A) = \lim_{n\to\infty} h_n(A)
 \]

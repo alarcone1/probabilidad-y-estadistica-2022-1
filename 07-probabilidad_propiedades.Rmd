@@ -45,7 +45,7 @@ En una encuesta de opinión se obtienen las siguientes frecuencias absolutas:
 |        | A favor (F) | En contra (C) | NS/NR (S) |
 |:------:|:-----------:|:-------------:|:---------:|
 | Hombre | 15          | 21            | 2         |
-| Hombre | 12          | 3             | 1         |
+| Mujer  | 12          | 3             | 1         |
 
 Al elegir una persona al azar, calcular la probabilidad de que:
 
