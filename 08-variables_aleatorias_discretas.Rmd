@@ -118,7 +118,7 @@ Sea $f_X$ una f.m.p. de una v.a.d. $X$ que asume los valores $x_1,x_2,\ldots$ de
 
 ## Ejemplo
 
-Dada $X$: suma del lanzamiento de dos dados. Se sabe que su f.m.p está dada por:
+Dada $X$: "suma del lanzamiento de dos dados". Se sabe que su f.m.p está dada por:
 
 $$f_X(x)=\frac{6-|7-x|}{36}\,,\qquad x=2,3,...,12$$
 Calcular:
