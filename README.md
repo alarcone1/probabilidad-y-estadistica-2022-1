@@ -13,6 +13,7 @@ Materiales del curso de **Probabilidad y Estadística Fundamental** ofreciendo e
 6. Medidas de Asociación.
 7. Fundamentos de Probabilidad.
 8. Propiedades de una Medida de Probabilidad.
+9. Medidas Característicsa de Variables Aleatorias.
 
 ## Talleres
 
