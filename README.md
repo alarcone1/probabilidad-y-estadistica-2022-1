@@ -16,6 +16,7 @@ Materiales del curso de **Probabilidad y Estadística Fundamental** ofreciendo e
 9. Medidas Característicsa de Variables Aleatorias.
 10. Algunas Distribuciones Discretas Especiales.
 11. Distribución Normal.
+12. Introducción a la Inferencia Estadística.
 
 ## Talleres
 
