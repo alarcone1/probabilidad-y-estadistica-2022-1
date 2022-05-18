@@ -19,6 +19,7 @@ Materiales del curso de **Probabilidad y Estadística Fundamental** ofreciendo e
 12. Algunas Distribuciones Discretas Especiales.
 13. Distribución Normal.
 14. Introducción a la Inferencia Estadística.
+15. Introducción a los Intervalos de Confianza.
 
 ## Talleres
 
