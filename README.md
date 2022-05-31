@@ -21,6 +21,8 @@ Materiales del curso de **Probabilidad y Estadística Fundamental** ofreciendo e
 14. Introducción a la Inferencia Estadística.
 15. Introducción a los Intervalos de Confianza.
 16. Intervalos de Confianza para 1 Población Bajo Normalidad.
+17. Intervalos de Confianza para 2 Poblaciones Bajo Normalidad.
+18. Bootstrap.
 
 ## Talleres
 
