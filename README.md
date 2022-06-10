@@ -23,6 +23,7 @@ Materiales del curso de **Probabilidad y Estadística Fundamental** ofreciendo e
 16. Intervalos de Confianza para 1 Población Bajo Normalidad.
 17. Intervalos de Confianza para 2 Poblaciones Bajo Normalidad.
 18. Bootstrap.
+19. Introducción a las Pruebas de Hipótesis.
 
 ## Talleres
 
@@ -48,3 +49,5 @@ Materiales del curso de **Probabilidad y Estadística Fundamental** ofreciendo e
 - Taller 10 - Solución.
 - Taller 11.
 - Taller 11 - Solución.
+- Taller 12.
+- Taller 13.
