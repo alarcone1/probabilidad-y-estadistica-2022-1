@@ -25,6 +25,7 @@ Materiales del curso de **Probabilidad y Estadística Fundamental** ofreciendo e
 18. Bootstrap.
 19. Introducción a las Pruebas de Hipótesis.
 20. Pruebas de Hipótesis para 1 Población Bajo Normalidad.
+21. Pruebas de Hipótesis para 2 Poblaciones Bajo Normalidad.
 
 ## Talleres
 
@@ -51,4 +52,6 @@ Materiales del curso de **Probabilidad y Estadística Fundamental** ofreciendo e
 - Taller 11.
 - Taller 11 - Solución.
 - Taller 12.
+- Taller 12 - Solución.
 - Taller 13.
+- Taller 13 - Solución.
